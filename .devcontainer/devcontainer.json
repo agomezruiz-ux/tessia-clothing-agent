@@ -5,11 +5,13 @@
     "ghcr.io/devcontainers/features/azure-cli:1": {}
   },
   "postCreateCommand": "pip install -r requirements.txt",
+  "postAttachCommand": "echo '\n🛍️  Tessia Clothing Agent ready!\n  1) az login --use-device-code\n  2) python agent.py   (terminal chat)\n  3) streamlit run app.py --server.enableCORS false --server.enableXsrfProtection false   (web)\n'",
   "forwardPorts": [8501],
   "portsAttributes": {
     "8501": { "label": "Streamlit web app", "onAutoForward": "openBrowser" }
   },
   "customizations": {
+    "codespaces": { "openFiles": ["README.md"] },
     "vscode": { "extensions": ["ms-python.python"] }
   }
 }
