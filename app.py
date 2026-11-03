@@ -97,13 +97,17 @@ st.title("🛍️ Tessia Clothing")
 st.markdown('<p class="tessia-sub">Your personal shopping assistant · Autumn/Winter 2026</p>',
             unsafe_allow_html=True)
 
-# Sidebar: example prompts and session info
+# Sidebar: example prompts, Instagram and session info
 with st.sidebar:
     st.header("Try asking")
     for example in EXAMPLES:
         if st.button(example, use_container_width=True, disabled=waiting):
             ask(example)
             st.rerun()
+    st.divider()
+    st.markdown("**Follow Tessia** 📸")
+    st.markdown("Instagram: [@tessia.clo](https://www.instagram.com/tessia.clo)")
+    st.caption("Custom hoodies, t-shirts, jackets and tote bags ✨")
     st.divider()
     st.caption(f"Tokens used in this chat: {st.session_state.tokens}")
     if st.button("🔄 New conversation", use_container_width=True):
