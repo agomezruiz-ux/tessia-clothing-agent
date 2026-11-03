@@ -83,6 +83,34 @@ python agent.py
 - **MCP approvals:** when the agent wants to use GitHub, the program shows the tool and its arguments and asks `Approve? (y/n)`.
 - Type `exit` to quit.
 
+## Web interface (extra)
+
+`app.py` is a web chat built with **Streamlit** that talks to the same agent.
+
+```bash
+pip install -r requirements.txt
+az login
+streamlit run app.py
+```
+
+- Opens at `http://localhost:8501`.
+- Chat with message history, example prompts in the sidebar and a token counter.
+- When the agent wants to use the GitHub MCP, the page shows the tool and its arguments with **Approve / Deny** buttons.
+- "New conversation" starts a fresh chat.
+
+### Who can access the web interface?
+
+The app runs **locally** and connects to the agent with the identity of the person who ran `az login`. It is only available while the app is running.
+
+| Option | How | Notes |
+|---|---|---|
+| **Run it yourself** (recommended) | Clone this repo, `az login` with an account that has access to the Foundry project, then `streamlit run app.py` | Each user authenticates with their own identity |
+| **Same network** | Share the *Network URL* that Streamlit prints (`http://<local-ip>:8501`) | Only on the same Wi-Fi and while the host computer is running the app |
+| **Temporary public link** | Expose the local port with a tunnel (e.g. ngrok, Cloudflare Tunnel) | Only while the host computer is on; anyone with the link uses the host's Azure identity |
+| **Permanent deployment** | Deploy to Azure App Service or Streamlit Community Cloud | Requires a service principal or managed identity with access to the Foundry project |
+
+> **Security note:** a public link would let anyone use the agent with the host's Azure identity, consume the project's quota and create issues in this repository. For this project the app is intended to run locally.
+
 ## Example prompts
 
 | Prompt | What the agent uses |
