@@ -1,6 +1,6 @@
 # Tessia Clothing – AI Shopping Assistant
 
-An AI agent built in **Microsoft Foundry** that acts as the personal shopping assistant of **Tessia Clothing**, a fictional women's fashion brand with stores in Madrid, Barcelona and Pamplona and an online shop that ships to Spain, the EU and Mexico.
+An AI agent built in **Microsoft Foundry** that acts as the personal shopping assistant of **Tessia Clothing**, a small women's fashion brand with stores in Madrid, Barcelona and Pamplona and an online shop that ships to Spain, the EU and Mexico.
 
 The agent helps customers choose products and outfits from the Autumn/Winter 2026 collection, find their size, calculate final prices with discounts and shipping, and understand the shipping and returns policy. When a request cannot be solved (an unavailable size, a defective item, a complaint or a suggestion), it registers it as a GitHub issue for the Tessia team.
 
