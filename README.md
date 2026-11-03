@@ -4,7 +4,7 @@ An AI agent built in **Microsoft Foundry** that acts as the personal shopping as
 
 The agent helps customers choose products and outfits from the Autumn/Winter 2026 collection, find their size, calculate final prices with discounts and shipping, and understand the shipping and returns policy. When a request cannot be solved (an unavailable size, a defective item, a complaint or a suggestion), it registers it as a GitHub issue for the Tessia team.
 
-> Tessia Clothing is a fictional brand. All documents in `data/` are sample data created with generative AI for an academic exercise (Máster en Análisis de Datos para Ingeniería, Tecnun – Universidad de Navarra).
+> > Tessia Clothing is a real small brand ([@tessia.clo](https://www.instagram.com/tessia.clo) on Instagram). The catalog, prices, stores and policies in `data/` are sample data created with generative AI for an academic exercise (Máster en Análisis de Datos para Ingeniería, Tecnun – Universidad de Navarra).. All documents in `data/` are sample data created with generative AI for an academic exercise (Máster en Análisis de Datos para Ingeniería, Tecnun – Universidad de Navarra).
 
 ---
 
